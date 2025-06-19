@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пасажирські перевезення Україна — Польща</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #005baa, #00c6ff);
+      color: white;
+      padding: 40px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .call-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      text-decoration: none;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .info, .benefits, .contact, .gallery, .schedule-gallery, .social-links {
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+    }
+    h2 {
+      color: #005baa;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✔️ ";
+      color: green;
+    }
+    .contact p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .contact a {
+      color: #005baa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #005baa;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+      transition: opacity 1s ease-in-out;
+      border-radius: 10px;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .social-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #005baa;
+      font-size: 1.5em;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .carousel {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🇺🇦 Україна — Польща 🇵🇱</h1>
+    <p>Регулярні пасажирські перевезення | Львів — Колобжег</p>
+    <a href="tel:+380938449540" class="call-button">📞 Подзвонити</a>
+  </header>
+
+  <div class="container">
+    <section class="info">
+      <h2>Графік поїздок</h2>
+      <p><span class="highlight">🔹 Виїзд зі Львова:</span> щочетверга та щонеділі</p>
+      <p><span class="highlight">🔹 Виїзд з Колобжегу:</span> щосуботи та щовівторка</p>
+      <p>🧳 Допомога з багажем</p>
+      <p>🚌 Маршрут: Львів - Warszawa - Plonsk - Mlawa - Olsztyn - Ostroda - Elblag - Gdańsk - Gdynia - Wejherowo - Lebork - Slupsk (Ustka, Darlowo, Bytow) - Koszalin - Kolobrzeg</p>
+    </section>
+
+    <section class="benefits">
+      <h2>✅ Що ви отримаєте</h2>
+      <ul>
+        <li>Комфортні мікроавтобуси (8 місць)</li>
+        <li>Досвідчені, ввічливі водії</li>
+        <li>Подорожі з дітьми</li>
+        <li>Адресна доставка «від дверей до дверей»</li>
+        <li>Переїзди, трансфери, доставка посилок</li>
+        <li>Бронювання — без передоплат!</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Наш транспорт</h2>
+      <div class="carousel">
+        <img class="active" src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.07.jpeg?raw=true" alt="Мікроавтобус">
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.59.jpeg?raw=true" alt="Комфорт салону">
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.18.jpeg?raw=true" alt="Комфорт салону">
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2015.00.08.jpeg?raw=true" alt="Комфорт салону">
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>📲 Контакти</h2>
+      <p>📞 <a href="tel:+380938449540">+380 93 844 95 40</a></p>
+      <p>📞 <a href="tel:+48578020158">+48 578 020 158</a></p>
+      <p>📩 Пишіть у <strong>Viber / WhatsApp / Messenger</strong> — завжди на зв’язку!</p>
+    </section>
+
+    <section class="info">
+      <h2>🔔 Надійно. Комфортно. Для вас.</h2>
+    </section>
+
+    <section class="social-links">
+      <h2>Ми в соцмережах</h2>
+      <a href="https://www.instagram.com/pasazhyrskyiperevezennia?igsh=em40ZzI3MWIxdWJ4&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@zazulkevychtrevel?_t=ZN-8xKoPylKOuM&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/share/1Ao244eZdz/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+    </section>
+  </div>
+
+  <script>
+    function setupCarousel(selector) {
+      const carousel = document.querySelector(selector);
+      if (!carousel) return;
+      const images = carousel.querySelectorAll('img');
+      let index = 0;
+
+      setInterval(() => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      }, 3000);
+    }
+
+    setupCarousel('.gallery .carousel');
+    setupCarousel('.schedule-gallery .carousel');
+  </script>
+</body>
+</html>
