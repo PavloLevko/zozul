@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="description" content="Комфортні пасажирські перевезення з України до Польщі. Львів – Колобжег. Виїзди щотижня, адресна доставка, бронювання без передоплат.">
-  <meta name="keywords" content="пасажирські перевезення Україна Польща, Львів Колобжег, трансфер Польща, мікроавтобуси, доставка пасажирів, від дверей до дверей">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Пасажирські перевезення Україна — Польща</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Комфортні пасажирські перевезення з України до Польщі. Львів – Колобжег. Виїзди щотижня, адресна доставка, бронювання без передоплат." />
+  <meta name="keywords" content="пасажирські перевезення Україна Польща, Львів Колобжег, трансфер Польща, мікроавтобуси, доставка пасажирів, від дверей до дверей" />
+  <meta property="og:title" content="Пасажирські перевезення Україна — Польща | Львів – Колобжег" />
+  <meta property="og:description" content="Комфортні мікроавтобуси, виїзди щотижня, адресна доставка, бронювання без передоплат." />
+  <meta property="og:image" content="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.18.jpeg?raw=true" />
+  <meta property="og:type" content="website" />
+
+  <title>Пасажирські перевезення Україна — Польща | Львів – Колобжег | Без передоплат</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Rubik', sans-serif;
+      font-family: "Rubik", sans-serif;
       background-color: #f0f0f0;
       color: #333;
     }
+
     header {
-      background: linear-gradient(to right, #005baa, #00c6ff);
+      background: url("https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.18.jpeg?raw=true") no-repeat center center;
+      background-size: cover;
       color: white;
       padding: 40px 20px 60px;
       text-align: center;
       position: relative;
     }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p,
+    .call-button {
+      position: relative;
+      z-index: 2;
+    }
+
     header h1 {
       margin: 0 0 10px;
       font-size: 2.5em;
@@ -47,16 +72,28 @@
       margin-top: 15px;
     }
     @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
     .container {
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
     }
-    .info, .benefits, .contact, .gallery, .schedule-gallery, .social-links {
+    .info,
+    .benefits,
+    .contact,
+    .gallery,
+    .schedule-gallery,
+    .social-links,
+    .reviews {
       background: white;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -121,6 +158,12 @@
         height: 250px;
       }
     }
+    .reviews p {
+      display: none;
+    }
+    .reviews p.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -136,7 +179,22 @@
       <p><span class="highlight">🔹 Виїзд зі Львова:</span> щочетверга та щонеділі</p>
       <p><span class="highlight">🔹 Виїзд з Колобжегу:</span> щосуботи та щовівторка</p>
       <p>🧳 Допомога з багажем</p>
-      <p>🚌 Маршрут: Львів - Warszawa - Plonsk - Mlawa - Olsztyn - Ostroda - Elblag - Gdańsk - Gdynia - Wejherowo - Lebork - Slupsk (Ustka, Darlowo, Bytow) - Koszalin - Kolobrzeg</p>
+      <p>
+        🚌 Маршрут: Львів - Warszawa - Plonsk - Mlawa - Olsztyn - Ostroda - Elblag -
+        Gdańsk - Gdynia - Wejherowo - Lebork - Slupsk (Ustka, Darlowo, Bytow) - Koszalin
+        - Kolobrzeg
+      </p>
+    </section>
+
+    <section class="reviews">
+      <h2>💬 Відгуки</h2>
+      <p class="active"><strong>Svetlana Kaduchka:</strong> Дякую за співпрацю, кращі перевізники!!!</p>
+      <p><strong>Елена Алехина:</strong> Задоволена поїздкою. Їхала з сином у лютому 2024. Комфортно, якісно, надійно та зруно. Рекомендую</p>
+      <p><strong>Юля Судаченко:</strong> Найкращий водій!</p>
+      <p><strong>Олена Мельник:</strong> Перший раз скористалася з дочкою вашою перевізкою. Дуже велике дякую. Буду вас радити усім.</p>
+      <p><strong>Валентина Овсепян:</strong> Дуже порядна та відповідальна людина, рекомендую.</p>
+      <p><strong>Тетяна Ле:</strong> Володя, дякую за комфортну поїздку</p>
+      <p><strong>Лена Лена:</strong> Рекомендую дуже порядний чоловік, комфорт у авто</p>
     </section>
 
     <section class="benefits">
@@ -146,18 +204,22 @@
         <li>Досвідчені, ввічливі водії</li>
         <li>Подорожі з дітьми</li>
         <li>Адресна доставка «від дверей до дверей»</li>
-        <li>Переїзди, трансфери, доставка посилок</li>
+        <li>Переїзди, трансфери</li>
         <li>Бронювання — без передоплат!</li>
+        <li>Адресний збір та доставка передач</li>
+        <li>Відправка посилок по всій Україні</li>
+        <li>Супровід людей похилого віку</li>
+        <li>Перевезення тварин + оформлення документів</li>
       </ul>
     </section>
 
     <section class="gallery">
       <h2>Наш транспорт</h2>
       <div class="carousel">
-        <img class="active" src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.07.jpeg?raw=true" alt="Мікроавтобус">
-        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.59.jpeg?raw=true" alt="Комфорт салону">
-        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.18.jpeg?raw=true" alt="Комфорт салону">
-        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2015.00.08.jpeg?raw=true" alt="Комфорт салону">
+        <img class="active" src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.07.jpeg?raw=true" alt="Мікроавтобус" />
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.59.jpeg?raw=true" alt="Комфорт салону" />
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2014.59.18.jpeg?raw=true" alt="Комфорт салону" />
+        <img src="https://github.com/PavloLevko/zozul/blob/main/photo_2025-06-19%2015.00.08.jpeg?raw=true" alt="Комфорт салону" />
       </div>
     </section>
 
@@ -174,28 +236,40 @@
 
     <section class="social-links">
       <h2>Ми в соцмережах</h2>
-      <a href="https://www.instagram.com/pasazhyrskyiperevezennia?igsh=em40ZzI3MWIxdWJ4&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@zazulkevychtrevel?_t=ZN-8xKoPylKOuM&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="https://www.facebook.com/share/1Ao244eZdz/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/pasazhyrskyiperevezennia?igsh=em40ZzI3MWIxdWJ4&utm_source=qr" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://www.tiktok.com/@zazulkevychtrevel?_t=ZN-8xKoPylKOuM&_r=1" target="_blank"
+        ><i class="fab fa-tiktok"></i
+      ></a>
+      <a href="https://www.facebook.com/share/1Ao244eZdz/?mibextid=wwXIfr" target="_blank"
+        ><i class="fab fa-facebook"></i
+      ></a>
     </section>
   </div>
 
   <script>
-    function setupCarousel(selector) {
-      const carousel = document.querySelector(selector);
-      if (!carousel) return;
-      const images = carousel.querySelectorAll('img');
-      let index = 0;
+    // Карусель для фотографій "Наш транспорт"
+    const galleryCarousel = document.querySelector(".gallery .carousel");
+    if (galleryCarousel) {
+      const images = galleryCarousel.querySelectorAll("img");
+      let currentImageIndex = 0;
 
       setInterval(() => {
-        images[index].classList.remove('active');
-        index = (index + 1) % images.length;
-        images[index].classList.add('active');
+        images[currentImageIndex].classList.remove("active");
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add("active");
       }, 3000);
     }
 
-    setupCarousel('.gallery .carousel');
-    setupCarousel('.schedule-gallery .carousel');
+    // Карусель для відгуків
+    const reviews = document.querySelectorAll(".reviews p");
+    let currentReviewIndex = 0;
+    setInterval(() => {
+      reviews[currentReviewIndex].classList.remove("active");
+      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+      reviews[currentReviewIndex].classList.add("active");
+    }, 3000);
   </script>
 </body>
 </html>
